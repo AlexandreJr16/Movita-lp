@@ -36,7 +36,7 @@ export function Model({ className }: { className: string }) {
           <ambientLight />
           <pointLight position={[10, 10, 10]} />
           <PerspectiveCamera makeDefault position={[0, 2.5, 8]} />
-          <OrbitControls />
+          {/* <OrbitControls /> */}
           <MeshComponent />
         </Canvas>
       </div>

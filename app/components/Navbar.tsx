@@ -2,10 +2,12 @@ import Image from "next/image";
 import Logo from "../../public/assets/Logo.svg";
 
 const navLinks = [
-  { name: "Quem somos" },
-  { name: "Problemática" },
-  { name: "Objetivo" },
-  { name: "Resultado " },
+  { name: "Home", id: "1" },
+  { name: "Quem Somos", id: "2" },
+  { name: "Objetivo Geral", id: "3" },
+  { name: "App ", id: "4" },
+  { name: "Site ", id: "5" },
+  { name: "AR ", id: "6" },
 ];
 
 export function Navbar() {
@@ -16,12 +18,13 @@ export function Navbar() {
 
         <div className="hidden lg:flex pl-[74px] gap-x-[56px]">
           {navLinks.map((item, index) => (
-            <p
+            <a
+              href={`#${item.id}`}
               className=" font-normal text-lg cursor-pointer text-black"
               key={index}
             >
               {item.name}
-            </p>
+            </a>
           ))}
         </div>
       </div>

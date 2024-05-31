@@ -7,7 +7,7 @@ import { Model } from "./Model";
 export function Features() {
   return (
     <div className="flex flex-col px-2 gap-y-[56px] py-[56px] lg:py-[120px] lg:gap-y-[80px] ">
-      <div className="flex flex-col gap-x-6 sm:flex-row-reverse">
+      <div id="3" className="flex flex-col gap-x-6 sm:flex-row-reverse">
         <Image
           src={Vita}
           alt="Feature 1 image"
@@ -55,7 +55,7 @@ export function Features() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-x-6 sm:flex-row">
+      <div id="4" className="flex flex-col gap-x-6 sm:flex-row">
         <Image
           src={Vita}
           alt="Feature 1 image"
@@ -107,7 +107,7 @@ export function Features() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-x-6 sm:flex-row-reverse">
+      <div id="5" className="flex flex-col gap-x-6 sm:flex-row-reverse">
         <Image
           src={Vita}
           alt="Feature 1 image"
@@ -158,7 +158,10 @@ export function Features() {
         </div>
       </div>
 
-      <div className="flex lg:items-center lg:justify-center flex-col gap-x-6 sm:flex-row">
+      <div
+        id="6"
+        className="flex lg:items-center lg:justify-center flex-col gap-x-6 sm:flex-row"
+      >
         <Model className=" h-96 lg:h-96 lg:w-1/2 bg-red w-full " />
         <div className="sm:w-1/2 lg:py-[56px] lg:pl-[56px]">
           <h3 className="font-bold text-[#36A5BF] lg:text-[18px] ">

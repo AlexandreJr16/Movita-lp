@@ -21,9 +21,14 @@ export default function Home() {
       />
 
       <Navbar />
-      <Hero />
+      <section id="1">
+        <Hero />
+      </section>
       <div className="px-[20px] lg:container lg:px-20 mx-auto">
-        <Members />
+        <section id="2">
+          <Members />
+        </section>
+
         <Features />
       </div>
       <Footer />
