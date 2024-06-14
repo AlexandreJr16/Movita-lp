@@ -24,6 +24,7 @@ export default function Home() {
       <section id="1">
         <Hero />
       </section>
+
       <div className="px-[20px] lg:container lg:px-20 mx-auto">
         <section id="2">
           <Members />

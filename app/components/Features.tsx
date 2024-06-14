@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Feature2 from "../../public/assets/feature-2.svg";
 import { AiOutlineCheck } from "@react-icons/all-files/ai/AiOutlineCheck";
 import Vita from "@/public/assets/vita.svg";
 import { Model } from "./Model";
@@ -160,7 +159,7 @@ export function Features() {
 
       <div
         id="6"
-        className="flex lg:items-center lg:justify-center flex-col gap-x-6 sm:flex-row"
+        className="flex lg:items-center flex-wrap lg:justify-center flex-col gap-x-6 sm:flex-row"
       >
         <Model className=" h-96 lg:h-96 lg:w-1/2 bg-red w-full " />
         <div className="sm:w-1/2 lg:py-[56px] lg:pl-[56px]">
