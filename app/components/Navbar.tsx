@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Logo from "../../public/assets/Logo.svg";
+import { motion } from "framer-motion";
 
 const navLinks = [
   { name: "Home", id: "1" },
@@ -18,13 +19,14 @@ export function Navbar() {
 
         <div className="hidden lg:flex pl-[74px] gap-x-[56px]">
           {navLinks.map((item, index) => (
-            <a
+            <motion.a
+              whileHover={{ color: "#FFC501" }}
               href={`#${item.id}`}
               className=" font-normal text-lg cursor-pointer text-black"
               key={index}
             >
               {item.name}
-            </a>
+            </motion.a>
           ))}
         </div>
       </div>

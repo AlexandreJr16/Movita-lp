@@ -5,7 +5,13 @@ import { motion } from "framer-motion";
 export function Hero() {
   return (
     <div className="pt-4 lg:pt-10 flex items-center justify-center flex-wrap w-full flex-row">
-      <div className=" lg:w-1/2 flex items-start justify-center flex-col lg:p-20 p-5 pb-7">
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, x: -100 }}
+        exit={{ opacity: 0 }}
+        className=" lg:w-1/2 flex items-start justify-center flex-col lg:p-20 p-5 pb-7"
+      >
         <h1 className="text-center  text-[#1f1f1f] font-bold text-6xl  lg:text-9xl lg:leading-[72px] hover:text-[#FFC501] hover:scale-105 transition-all ">
           Movita
         </h1>
@@ -13,18 +19,8 @@ export function Hero() {
           A sua plataforma Mobile e Web para auxiliar na venda de móveis
           planejados.
         </p>
-      </div>
+      </motion.div>
 
-      {/* <motion.div
-        initial={{ scale: 0 }}
-        animate={{ rotate: 180, scale: 1 }}
-        transition={{
-          type: "spring",
-          stiffness: 260,
-          damping: 20,
-          repeat: 1000,
-        }}
-      /> */}
       <div className=" flex-col h-full items-center justify-center w-full lg:w-1/2 gap-3">
         <motion.div
           animate={{
