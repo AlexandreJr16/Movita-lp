@@ -53,7 +53,7 @@ export function Hero() {
           href="https://www.instagram.com/projetomovita/"
           className="h-full flex items-center justify-start flex-row gap-5 p-5 lg:p-0 lg:justify-center outline-none"
         >
-          <h5 className="font-medium">Sigam-nos no Instagram:</h5>
+          <h5 className="font-medium">Instagram:</h5>
           <FaInstagram size={30} />
         </a>
       </div>

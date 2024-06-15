@@ -5,15 +5,16 @@ import Vita from "@/public/assets/vita.svg";
 import { Model } from "./Model";
 import LoginWeb from "../../public/assets/Login.svg";
 import TelasMobile from "../../public/assets/TelasMobile.svg";
+import BoxCard from "../../public/assets/boxCard.svg";
 
 export function Features() {
   return (
     <div className="flex flex-col px-2 gap-y-[56px] py-[56px] lg:py-[120px] lg:gap-y-[80px] ">
       <div id="3" className="flex flex-col gap-x-6 sm:flex-row-reverse">
         <Image
-          src={Vita}
+          src={BoxCard}
           alt="Feature 1 image"
-          className="hidden w-1/2 sm:block"
+          className="hidden w-1/2 rounded-2xl sm:block"
         />
         <div className="sm:w-1/2 lg:py-[56px] lg:pr-[56px]">
           <h3 className="font-bold text-[#FFC501] lg:text-[18px] ">
@@ -24,9 +25,9 @@ export function Features() {
             empresas fabricantes de móveis planejados.
           </h1>
           <Image
-            src={Vita}
+            src={BoxCard}
             alt="feature 1 image"
-            className="pt-[24px] sm:hidden"
+            className="pt-[24px] sm:hidden rounded-2xl"
           />
           <p className="py-[24px] text-[#1f1f1f] lg:text-[18px]">
             Com isso, buscamos:
@@ -154,7 +155,7 @@ export function Features() {
               <span>
                 <AiOutlineCheck />
               </span>
-              Se conectar aos clientes por meio do chat
+              Conectar-se aos clientes por meio do chat
             </li>
           </ul>
         </div>
