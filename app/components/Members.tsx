@@ -8,10 +8,10 @@ export function Members() {
         Equipe Movita
       </h1>
 
-      <div className="flex flex-col gap-y-6 gap-x-[24px] lg:flex-row">
-        <div className="w-full lg:w-full rounded-[8px] bg-[#BF9969] items-start p-6 flex flex-col lg:justify-center hover:scale-105 transition">
+      <div className="flex flex-col gap-y-6 gap-x-[24px] lg:flex-row items-center">
+        <div className="w-4/5 lg:w-full rounded-[8px] bg-[#BF9969] items-start p-6 flex flex-col lg:justify-center hover:scale-105 transition">
           <Image
-            src={require("@/public/assets/investidorSenior.png")}
+            src={require("@/public/assets/leandro.jpg")}
             alt="Ola"
             className="w-full  rounded-xl"
           />
@@ -21,9 +21,9 @@ export function Members() {
           <h3 className="lg:text-base font-light text-white">Analista</h3>
         </div>
 
-        <div className="w-full lg:w-full rounded-[8px] bg-[#A64029] p-6 flex flex-col hover:scale-105 transition">
+        <div className="w-4/5 lg:w-full rounded-[8px] bg-[#A64029] p-6 flex flex-col hover:scale-105 transition">
           <Image
-            src={require("@/public/assets/investidorSenior.png")}
+            src={require("@/public/assets/joao.jpg")}
             alt="Ola"
             className="w-full  rounded-xl"
           />
@@ -33,11 +33,11 @@ export function Members() {
           <h3 className="lg:text-base font-light text-white">Analista</h3>
         </div>
 
-        <div className="w-full lg:w-full rounded-[8px] bg-[#36A5BF] p-6 flex flex-col lg:justify-between hover:scale-105 transition">
+        <div className="w-4/5 lg:w-full rounded-[8px] bg-[#36A5BF] p-6 flex flex-col lg:justify-between hover:scale-105 transition">
           <Image
-            src={require("@/public/assets/investidorSenior.png")}
+            src={require("@/public/assets/eu.jpg")}
             alt="Ola"
-            className="w-full  rounded-xl"
+            className="w-full  rounded-xl  aspect-w-1 aspect-h-1"
           />
           <h1 className="lg:text-2xl text-3xl font-semibold text-white">
             Alexandre Junior

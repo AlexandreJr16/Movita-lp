@@ -7,6 +7,7 @@ import { Navbar } from "./components/Navbar";
 import { Members } from "./components/Members";
 import { motion, useScroll } from "framer-motion";
 import { Model } from "./components/Model";
+import Modal from "./components/Modal";
 // import MeshComponent from "./components/3dModelViewer";
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
         </section>
 
         <Features />
+        <Modal />
       </div>
       <Footer />
     </div>

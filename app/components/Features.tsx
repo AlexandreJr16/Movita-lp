@@ -1,7 +1,10 @@
 import Image from "next/image";
+import Feature2 from "../../public/assets/feature-2.svg";
 import { AiOutlineCheck } from "@react-icons/all-files/ai/AiOutlineCheck";
 import Vita from "@/public/assets/vita.svg";
 import { Model } from "./Model";
+import LoginWeb from "../../public/assets/Login.svg";
+import TelasMobile from "../../public/assets/TelasMobile.svg";
 
 export function Features() {
   return (
@@ -56,7 +59,7 @@ export function Features() {
 
       <div id="4" className="flex flex-col gap-x-6 sm:flex-row">
         <Image
-          src={Vita}
+          src={TelasMobile}
           alt="Feature 1 image"
           className="hidden w-1/2 sm:block"
         />
@@ -68,7 +71,7 @@ export function Features() {
             App Movita
           </h1>
           <Image
-            src={Vita}
+            src={TelasMobile}
             alt="feature 1 image"
             className="pt-[24px] sm:hidden"
           />
@@ -108,7 +111,7 @@ export function Features() {
 
       <div id="5" className="flex flex-col gap-x-6 sm:flex-row-reverse">
         <Image
-          src={Vita}
+          src={LoginWeb}
           alt="Feature 1 image"
           className="hidden w-1/2 sm:block"
         />
@@ -120,7 +123,7 @@ export function Features() {
             Site Movita
           </h1>
           <Image
-            src={Vita}
+            src={LoginWeb}
             alt="feature 1 image"
             className="pt-[24px] sm:hidden"
           />
@@ -159,7 +162,7 @@ export function Features() {
 
       <div
         id="6"
-        className="flex lg:items-center flex-wrap lg:justify-center flex-col gap-x-6 sm:flex-row"
+        className="flex lg:items-center lg:justify-center flex-col gap-x-6 sm:flex-row"
       >
         <Model className=" h-96 lg:h-96 lg:w-1/2 bg-red w-full " />
         <div className="sm:w-1/2 lg:py-[56px] lg:pl-[56px]">
