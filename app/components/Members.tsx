@@ -1,9 +1,15 @@
 "use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export function Members() {
   return (
-    <div className="py-[48px] lg:py-[60px] ">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 100 }}
+      className="py-[48px] lg:py-[60px] "
+    >
       <h1 className="text-[#FFC501] text-center font-bold  text-4xl lg:text-5xl pb-8">
         Equipe Movita
       </h1>
@@ -45,6 +51,6 @@ export function Members() {
           <h3 className="lg:text-base font-light text-white">Analista</h3>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

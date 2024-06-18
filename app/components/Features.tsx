@@ -7,11 +7,20 @@ import LoginWeb from "../../public/assets/Login.svg";
 import TelasMobile from "../../public/assets/TelasMobile.svg";
 import BoxCard from "../../public/assets/boxCard.svg";
 
+import { motion } from "framer-motion";
+
 export function Features() {
   return (
     <div className="flex flex-col px-2 gap-y-[56px] py-[56px] lg:py-[120px] lg:gap-y-[80px] ">
-      <div id="3" className="flex flex-col gap-x-6 sm:flex-row-reverse">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 100 }}
+        id="3"
+        className="flex flex-col gap-x-6 sm:flex-row-reverse"
+      >
         <Image
+          loading="lazy"
           src={BoxCard}
           alt="Feature 1 image"
           className="hidden w-1/2 rounded-2xl sm:block"
@@ -25,6 +34,7 @@ export function Features() {
             empresas fabricantes de móveis planejados.
           </h1>
           <Image
+            loading="lazy"
             src={BoxCard}
             alt="feature 1 image"
             className="pt-[24px] sm:hidden rounded-2xl"
@@ -56,10 +66,17 @@ export function Features() {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
 
-      <div id="4" className="flex flex-col gap-x-6 sm:flex-row">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 100 }}
+        id="4"
+        className="flex flex-col gap-x-6 sm:flex-row"
+      >
         <Image
+          loading="lazy"
           src={TelasMobile}
           alt="Feature 1 image"
           className="hidden w-1/2 sm:block"
@@ -72,6 +89,7 @@ export function Features() {
             App Movita
           </h1>
           <Image
+            loading="lazy"
             src={TelasMobile}
             alt="feature 1 image"
             className="pt-[24px] sm:hidden"
@@ -108,10 +126,17 @@ export function Features() {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
 
-      <div id="5" className="flex flex-col gap-x-6 sm:flex-row-reverse">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 100 }}
+        id="5"
+        className="flex flex-col gap-x-6 sm:flex-row-reverse"
+      >
         <Image
+          loading="lazy"
           src={LoginWeb}
           alt="Feature 1 image"
           className="hidden w-1/2 sm:block"
@@ -124,6 +149,7 @@ export function Features() {
             Site Movita
           </h1>
           <Image
+            loading="lazy"
             src={LoginWeb}
             alt="feature 1 image"
             className="pt-[24px] sm:hidden"
@@ -159,9 +185,12 @@ export function Features() {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
 
-      <div
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 100 }}
         id="6"
         className="flex lg:items-center lg:justify-center flex-col gap-x-6 sm:flex-row"
       >
@@ -206,7 +235,7 @@ export function Features() {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
