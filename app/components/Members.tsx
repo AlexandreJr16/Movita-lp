@@ -127,7 +127,7 @@ export function Members() {
           />
           <div className="w-full flex items-start justify-center flex-col p-5">
             <h1 className="lg:text-2xl text-2xl font-semibold text-[#1f1f1f] flex w-full justify-between items-center">
-              Ihago
+              Ihago Nunes
             </h1>
             <h3 className="lg:text-base font-light text-[#1f1f1f]">Analista</h3>
             <p className="text-sm font-extralight pt-2">

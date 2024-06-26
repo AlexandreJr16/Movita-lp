@@ -32,7 +32,7 @@ export function Model({ className }: { className: string }) {
       }
     >
       <div className={className}>
-        <Canvas className="h-full w-full ">
+        <Canvas className="h-full w-full bg-[#f2f2f2] rounded-2xl">
           <ambientLight />
           <pointLight position={[10, 10, 10]} />
           <PerspectiveCamera makeDefault position={[0, 2.5, 8]} />
