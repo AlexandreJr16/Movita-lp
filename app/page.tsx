@@ -14,11 +14,11 @@ export default function Home() {
   const { scrollYProgress } = useScroll();
 
   return (
-    <div className="flex-1  w-full">
+    <div className="flex-1  w-full bg-[#1f1f1f]">
       {/* <MeshComponent></MeshComponent> */}
       <motion.div
         style={{ scaleX: scrollYProgress }}
-        className="fixed top-0 left-0 right-0 h-3 bg-[#FFC501]  w-full z-10 origin-left"
+        className="fixed top-0 left-0 right-0 h-1 bg-[#FFC501]  w-full z-10 origin-left"
       />
 
       <Navbar />

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 import { motion } from "framer-motion";
+import HeroImage from "@/public/assets/file.png";
 
 export function Hero() {
   return (
@@ -12,16 +13,16 @@ export function Hero() {
         exit={{ opacity: 0 }}
         className=" lg:w-1/2 flex items-start justify-center flex-col lg:p-20 p-5 pb-7"
       >
-        <h1 className="text-center  text-[#1f1f1f] font-bold text-6xl  lg:text-9xl lg:leading-[72px] hover:text-[#FFC501] hover:scale-105 transition-all ">
+        <h1 className="text-center  text-[#fff] font-bold text-6xl  lg:text-9xl lg:leading-[72px] hover:text-[#FFC501] hover:scale-105 transition-all ">
           Movita
         </h1>
-        <p className="font-medium text-xl pt-6 text-[#1f1f1f] ">
+        <p className="font-medium text-xl pt-6 text-[#fff] ">
           A sua plataforma Mobile e Web para auxiliar na venda de móveis
           planejados.
         </p>
       </motion.div>
 
-      <div className=" flex-col h-full items-center justify-center w-full lg:w-1/2 gap-3">
+      <div className="flex flex-col h-full items-center justify-center w-full lg:w-1/2 gap-3">
         <motion.div
           animate={{
             y: [-10, -20, -10, 0, -10],
@@ -39,19 +40,19 @@ export function Hero() {
           }}
         >
           <Image
-            src={require("../../public/assets/HeroImage.png")}
+            src={HeroImage}
             alt="hero image"
             className=" lg:w-5/6 w-5/6 hover:scale-105 transition self-center mx-8 lg:mx-0"
           />
         </motion.div>
 
-        <a
+        {/* <a
           href="https://www.instagram.com/projetomovita/"
           className="h-full flex items-center justify-start flex-row gap-5 p-5 lg:p-0 lg:justify-center outline-none"
         >
           <h5 className="font-medium">Instagram:</h5>
           <FaInstagram size={30} />
-        </a>
+        </a> */}
       </div>
     </div>
   );

@@ -20,8 +20,10 @@ const Modal = () => {
         className="flex-1 flex items-center justify-around flex-col lg:py-20 py-10  px-10 gap-16"
       >
         <div className="flex flex-col gap-2  items-start justify-center">
-          <h2 className="text-4xl font-extrabold">Quer testar o movita?</h2>
-          <p className="text-lg">
+          <h2 className="text-4xl font-extrabold text-white">
+            Quer testar o movita?
+          </h2>
+          <p className="text-lg text-white">
             Já está disponível a realidade aumentada para testes.
           </p>
         </div>
@@ -36,7 +38,7 @@ const Modal = () => {
               Movita AR
             </a>
           </motion.div>
-          <label className="text-xs font-extralight ">
+          <label className="text-xs font-extralight text-white ">
             O modelo de seu dispositivo pode não ter compatibilidade ainda.
           </label>
         </div>
