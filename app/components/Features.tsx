@@ -19,7 +19,7 @@ export function Features() {
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 100 }}
         id="3"
-        className="flex flex-col gap-x-6 sm:flex-row-reverse"
+        className="flex flex-col gap-x-6 sm:flex-row-reverse items-center justify-center"
       >
         <Image
           loading="lazy"
@@ -75,10 +75,10 @@ export function Features() {
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 100 }}
         id="4"
-        className="flex flex-col gap-x-6 sm:flex-row"
+        className="flex flex-col gap-x-6 sm:flex-row items-center justify-center"
       >
         <div className="hidden w-1/2 sm:block ">
-          <div className="w-full flex gap-3 items-center justify-center">
+          <div className="w-full self-center justify-self-center flex gap-3 items-center justify-center">
             <Image
               loading="lazy"
               className="w-1/3"
@@ -107,7 +107,7 @@ export function Features() {
             App Movita
           </h1>
           <div className="pt-[24px] sm:hidden w-full flex">
-            <div className="w-full flex gap-3 items-center justify-center">
+            <div className="w-full flex self-center justify-self-center gap-3 items-center justify-center">
               <Image
                 loading="lazy"
                 className="w-1/3"
@@ -167,7 +167,7 @@ export function Features() {
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 100 }}
         id="5"
-        className="flex flex-col gap-x-6 sm:flex-row-reverse"
+        className="flex flex-col gap-x-6 sm:flex-row-reverse items-center justify-center"
       >
         <Image
           loading="lazy"
