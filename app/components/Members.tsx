@@ -94,21 +94,15 @@ export function Members() {
               <a
                 target="_blank"
                 className="text-2xl "
-                href="https://www.instagram.com/souza.al3"
+                href="https://www.instagram.com/_annantony"
               >
                 <FaInstagram />
               </a>
+
               <a
                 target="_blank"
                 className="text-2xl "
-                href="https://www.linkedin.com/in/alexandre-souza-480759288/"
-              >
-                <GrLinkedin />
-              </a>
-              <a
-                target="_blank"
-                className="text-2xl "
-                href="https://www.instagram.com/souza.al3"
+                href="mailto:annaluisa.antony@gmail.com"
               >
                 <GoMail />
               </a>
